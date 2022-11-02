@@ -4,11 +4,13 @@
         <section class="col-6 mt-5">
               <p><strong>User Name</strong>: <%= user.userName %></p>
               <p><strong>Email</strong>: <%= user.email %></p>
-                <a class="btn btn-primary" href="/feed">Return to Feed</a>
-                <a href="/logout" class=" btn btn-primary">Logout</a>
+              <div class="row justify-content-between mt-5">
+                <a class="col-5 btn btn-outline-warning" href="/feed">Return to Feed</a>
+                <a href="/logout" class="col-5 btn btn-outline-warning">Logout</a>
+              </div>
               </section>
       </div>
-          <div class="row justify-content-center ">
+          <div class="row justify-content-center form-floating ">
             <section class="col-6 mt-5">
             <h2>Add a post</h2>
             <form action="/post/createPost" enctype="multipart/form-data" method="POST">
