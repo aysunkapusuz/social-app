@@ -1,4 +1,49 @@
 body{
-    background: linear-gradient(112.5deg, rgb(95, 10, 135) 11.4%, rgb(164, 80, 139) 60.2%);
+    background:	#800080;
+  
+    font-family: 'Caveat', cursive;
+}
 
+
+.girl-wrapper {
+	position: fixed;
+	display: flex;
+	align-items: flex-end;
+	bottom: 0;
+	animation: walking 12s linear infinite;
+}
+.girl {
+	width: calc(1536px / 6);
+	height: 256px;
+	background-image: url("https://assets.codepen.io/1839803/female-character-spritestrip.png");
+	transform: scale(0.5);
+	transform-origin: bottom;
+	animation: girl-motion 0.7s steps(6) infinite;
+}
+
+@keyframes walking {
+	from {
+		transform: translate(0, 0%);
+	}
+	to {
+		transform: translate(100vw, 0%);
+	}
+}
+
+@keyframes dude-motion {
+	from {
+		background-position: 0;
+	}
+	to {
+		background-position: -600px;
+	}
+}
+
+@keyframes girl-motion {
+	from {
+		background-position: 0;
+	}
+	to {
+		background-position: -1536px;
+	}
 }
