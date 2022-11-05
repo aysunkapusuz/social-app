@@ -3,7 +3,37 @@ body{
   
     font-family: 'Caveat', cursive;
 }
-
+.link-warning{
+	text-decoration: none;
+}
+h1 a{
+	text-decoration: none;
+	color: rgb(209, 65, 228);
+	font-size: 5rem;
+	font-weight: bolder;
+}
+a:hover{
+	color: pink;
+}
+h1 {
+	
+	margin: 0;
+	 writing-mode: vertical-lr;
+	line-height: .9;
+	
+  }
+  
+  .rotate {
+	 transform: rotate(180deg);
+  }
+  
+  .hello {
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	grid-template-columns: max-content max-content;
+  }
+  
 
 .girl-wrapper {
 	position: fixed;
@@ -19,6 +49,7 @@ body{
 	transform: scale(0.5);
 	transform-origin: bottom;
 	animation: girl-motion 0.7s steps(6) infinite;
+	z-index: 1;
 }
 
 @keyframes walking {
@@ -46,4 +77,8 @@ body{
 	to {
 		background-position: -1536px;
 	}
+}
+
+#login, #signup {
+	z-index: 1;
 }
