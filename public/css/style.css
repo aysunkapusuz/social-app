@@ -208,3 +208,43 @@ h2 {
 	  filter: blur(0);
 	}
   }
+
+  a {
+	text-decoration:none;
+	color:#FFF;
+  }
+  .rainbow-button {
+	width:calc(15vh + 6px);
+	height:calc(5vh + 6px);
+	background-image: linear-gradient(90deg, #b95cef 0%, #bc3ceb 49%, #860dab81 80%, #ac0d84 100%);
+	border-radius:5px;
+	display: flex;
+	align-items:center;
+	justify-content:center;
+	text-transform:uppercase;
+	font-weight:bold;
+	
+  }
+  .rainbow-button:after {
+	content:attr(alt);
+	width:15vh;
+	height:5vh;
+	background-color:	#800080;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+  }
+  .rainbow-button:hover {
+	animation:slidebg 2s linear infinite;
+  }
+  
+  @keyframes slidebg {
+	to {
+	  background-position:20vw;
+	}
+  }
+  a {
+	text-decoration:none;
+	color:#FFF;
+  }
+ 
