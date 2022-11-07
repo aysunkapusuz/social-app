@@ -1,9 +1,9 @@
 <%- include('partials/header') -%>
 <div class="container">
       <div class="row justify-content-center mt-5" >
-        <section class="col-6 mt-5">
-              <p><strong>User Name</strong>: <%= user.userName %></p>
-              <p><strong>Email</strong>: <%= user.email %></p>
+        <section class="col-9 mt-5">
+              <p ><strong class="text-decoration-underline">User Name</strong>: <%= user.userName %></p>
+              <p><strong class="text-decoration-underline">Email</strong>: <%= user.email %></p>
               <div class="row justify-content-between mt-5">
                 <a class="col-5 rainbow-button" alt="Feed" href="/feed"></a>
                 <a href="/logout" class="col-5  rainbow-button" alt="Logout"></a>
@@ -12,18 +12,18 @@
       </div>
           <div class="row justify-content-center form-floating ">
             <section class="col-6 mt-5">
-            <h2>Add a post</h2>
+            <h2 class="text-decoration-underline">Add a post</h2>
             <form action="/post/createPost" enctype="multipart/form-data" method="POST">
               <div class="mb-3">
-                  <label for="title" class="form-label">Title</label>
+                  <label for="title" class="form-label">Title:</label>
                   <input type="text" class="form-control" id="title" name="title">
               </div>
               <div class="mb-3">
-                <label for="caption" class="form-label">Caption</label>
+                <label for="caption" class="form-label">Caption:</label>
                 <textarea class="form-control" id="caption" name="caption"></textarea>
               </div>
               <div class="mb-3">
-                <label for="imgUpload" class="form-label">Image</label>
+                <label for="imgUpload" class="form-label">Image:</label>
                 <input type="file" class="form-control form-control-sm" id="imageUpload" name="file">
               </div>
               <button type="submit" class="btn btn-secondary" value="Upload">Submit</button>
