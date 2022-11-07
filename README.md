@@ -40,9 +40,3 @@ GoGirls is a full-stack social media web application that is created to promote 
 
 `npm start`
 
-
-
-
-
-
-
