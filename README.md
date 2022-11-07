@@ -1,3 +1,24 @@
+<div align="center"> 
+
+# GoGirls App
+## [Click Here](https://gogirls.cyclic.app/) for live site 
+
+
+</div>
+
+
+
+
+## How it's made:
+<strong> Tech used: </strong> Node.js, Express.js, MongoDB, CSS, EJS, Bootstrap, Cloudinary
+
+GoGirls is a full-stack social media web application that is created to promote femininity. Users can share photos of places they visit by adding stories. These inspiring stories can receive comments and likes from other users to show solidarity. 
+ 
+
+### Usage
+
+
+```
 # Install
 
 `npm install`
@@ -18,3 +39,10 @@
 # Run
 
 `npm start`
+
+
+
+
+
+
+
