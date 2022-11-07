@@ -5,22 +5,22 @@
     <div class="col-6">
       <h2 class="text-decoration-underline"> <%= user.userName %></h2>
       <img class="img-thumbnail" src="<%= post.image%>" />
-      <div class="row justify-content-center">
+      <div class="row justify-content-around">
+        <h6 class="col-4">likes: <%= post.likes %></h6>
         <form
           class="col-3"
           action="/post/likePost/<%= post.id %>?_method=PUT"
           method="POST"
         >
-          <button class="btn btn-danger fa fa-heart" type="submit"></button>
+          <button class="btn btn-outline-danger fa fa-heart btn-sm" type="submit"></button>
         </form>
-        <h6 class="col-3">Likes: <%= post.likes %></h6>
         <%if(post.user == user.id){ %>
         <form
           action="/post/deletePost/<%= post.id %>?_method=DELETE"
           method="POST"
           class="col-3"
         >
-          <button class="btn btn-primary fa fa-trash" type="submit"></button>
+          <button class="btn btn-outline-warning fa fa-trash btn-sm" type="submit"></button>
         </form>
         <%}%>
       </div>
